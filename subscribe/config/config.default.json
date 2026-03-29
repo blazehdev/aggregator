@@ -1,33 +1,25 @@
 {
-    "domains": [
-        {
-            "name": "全网免费公益源",
-            "sub": [
-                "https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub",
-                "https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/v2ray.txt",
-                "https://raw.githubusercontent.com/mfuu/v2ray/master/v2ray",
-                "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/sub/sub_merge.txt"
-            ],
-            "enable": true,
-            "include": "(?i)澳洲|澳大利亚|Australia|\\bAU\\b|Sydney|Melbourne|悉尼|墨尔本|HK|Hong Kong|香港|SG|Singapore|新加坡",
-            "exclude": "(下载|游戏|官网|剩余|到期|禁止)专用",
-            "push_to": [
-                "au_group"
-            ]
-        }
-    ],
     "crawl": {
         "enable": true,
         "singlelink": true,
-        "telegram": {
-            "enable": true,
-            "pages": 5,
-            "users": {
-                "v2ray_share": {
-                    "push_to": ["au_group"]
-                }
+        "pages": [
+            {
+                "enable": true,
+                "url": "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/sub/sub_merge.txt",
+                "include": "",
+                "push_to": [
+                    "au_group"
+                ]
+            },
+            {
+                "enable": true,
+                "url": "https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub",
+                "include": "",
+                "push_to": [
+                    "au_group"
+                ]
             }
-        }
+        ]
     },
     "groups": {
         "au_group": {
@@ -39,6 +31,7 @@
                 "v2ray": "au-v2ray"
             },
             "regularize": {
+                "enable": true,
                 "locate": true,
                 "residential": false
             }
