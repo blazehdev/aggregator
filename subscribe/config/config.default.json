@@ -1,13 +1,16 @@
 {
     "domains": [
         {
-            "name": "自定义订阅源",
+            "name": "全网免费公益源",
             "sub": [
-                "如果你有自带的机场订阅链接，请填在这里，保留双引号"
+                "https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub",
+                "https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/v2ray.txt",
+                "https://raw.githubusercontent.com/mfuu/v2ray/master/v2ray",
+                "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/sub/sub_merge.txt"
             ],
             "enable": true,
-            "include": "(?i)HK|Hong Kong|香港|SG|Singapore|新加坡",
-            "exclude": "(下载|游戏|官网|剩余|到期)专用",
+            "include": "(?i)澳洲|澳大利亚|Australia|\\bAU\\b|Sydney|Melbourne|悉尼|墨尔本|HK|Hong Kong|香港|SG|Singapore|新加坡",
+            "exclude": "(下载|游戏|官网|剩余|到期|禁止)专用",
             "push_to": [
                 "au_group"
             ]
@@ -16,18 +19,11 @@
     "crawl": {
         "enable": true,
         "singlelink": true,
-        "github": {
-            "enable": true,
-            "pages": 2,
-            "push_to": [
-                "au_group"
-            ]
-        },
         "telegram": {
             "enable": true,
             "pages": 5,
             "users": {
-                "V2List": {
+                "v2ray_share": {
                     "push_to": ["au_group"]
                 }
             }
@@ -44,7 +40,7 @@
             },
             "regularize": {
                 "locate": true,
-                "residential": true
+                "residential": false
             }
         }
     },
