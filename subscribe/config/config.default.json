@@ -52,15 +52,15 @@
         "engine": "gist",
         "items": {
             "au-clash": {
-                "gistid": "blazehdev": "4d55ce6d887f17cee17158e0051dab63",
+                "gistid": "4d55ce6d887f17cee17158e0051dab63",
                 "filename": "au-clash.yaml"
             },
             "au-singbox": {
-                "gistid": "blazehdev": "4d55ce6d887f17cee17158e0051dab63",
+                "gistid": "4d55ce6d887f17cee17158e0051dab63",
                 "filename": "au-singbox.json"
             },
             "au-v2ray": {
-                "gistid": "blazehdev": "4d55ce6d887f17cee17158e0051dab63",
+                "gistid": "4d55ce6d887f17cee17158e0051dab63",
                 "filename": "au-v2ray.txt"
             }
         }
