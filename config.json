@@ -25,11 +25,13 @@
         "engine": "gist",
         "items": {
             "au-clash": {
-                "id": "4d55ce6d887f17cee17158e0051dab63",
+                "username": "blazehdev", 
+                "gistid": "4d55ce6d887f17cee17158e0051dab63",
                 "filename": "au-clash.yaml"
             },
             "au-v2ray": {
-                "id": "4d55ce6d887f17cee17158e0051dab63",
+                "username": "blazehdev",
+                "gistid": "4d55ce6d887f17cee17158e0051dab63",
                 "filename": "au-v2ray.txt"
             }
         }
