@@ -6,7 +6,7 @@
                 "如果你有自带的机场订阅链接，请填在这里，保留双引号"
             ],
             "enable": true,
-            "include": "(?i)澳洲|澳大利亚|Australia|\\bAU\\b|Sydney|Melbourne|悉尼|墨尔本",
+            "include": "(?i)HK|Hong Kong|香港|SG|Singapore|新加坡",
             "exclude": "(下载|游戏|官网|剩余|到期)专用",
             "push_to": [
                 "au_group"
