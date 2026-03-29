@@ -1,0 +1,57 @@
+{
+    "crawl": {
+        "enable": true,
+        "singlelink": true,
+        "pages": [
+            {
+                "enable": true,
+                "url": "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/sub/sub_merge.txt",
+                "include": "",
+                "push_to": [
+                    "au_group"
+                ]
+            },
+            {
+                "enable": true,
+                "url": "https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub",
+                "include": "",
+                "push_to": [
+                    "au_group"
+                ]
+            }
+        ]
+    },
+    "groups": {
+        "au_group": {
+            "emoji": true,
+            "list": true,
+            "targets": {
+                "clash": "au-clash",
+                "singbox": "au-singbox",
+                "v2ray": "au-v2ray"
+            },
+            "regularize": {
+                "enable": true,
+                "locate": true,
+                "residential": false
+            }
+        }
+    },
+    "storage": {
+        "engine": "gist",
+        "items": {
+            "au-clash": {
+                "gistid": "4d55ce6d887f17cee17158e0051dab63",
+                "filename": "au-clash.yaml"
+            },
+            "au-singbox": {
+                "gistid": "4d55ce6d887f17cee17158e0051dab63",
+                "filename": "au-singbox.json"
+            },
+            "au-v2ray": {
+                "gistid": "4d55ce6d887f17cee17158e0051dab63",
+                "filename": "au-v2ray.txt"
+            }
+        }
+    }
+}
