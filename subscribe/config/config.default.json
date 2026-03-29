@@ -5,10 +5,15 @@
         "pages": [
             {
                 "enable": true,
-                "url": [
-                    "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/sub/sub_merge.txt",
-                    "https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub"
-                ],
+                "url": "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/sub/sub_merge.txt",
+                "include": "",
+                "push_to": [
+                    "au_group"
+                ]
+            },
+            {
+                "enable": true,
+                "url": "https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub",
                 "include": "",
                 "push_to": [
                     "au_group"
@@ -27,7 +32,7 @@
             },
             "regularize": {
                 "enable": true,
-                "locate": false,
+                "locate": true,
                 "residential": false
             }
         }
