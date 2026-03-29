@@ -1,56 +1,204 @@
 {
+    "domains": [
+        {
+            "name": "",
+            "sub": [],
+            "domain": "",
+            "enable": true,
+            "rename": "",
+            "include": "",
+            "exclude": "",
+            "push_to": [],
+            "ignorede": true,
+            "liveness": true,
+            "rate": 2.5,
+            "count": 2,
+            "coupon": "",
+            "secure": false,
+            "renew": {
+                "account": [
+                    {
+                        "email": "",
+                        "passwd": "",
+                        "ticket": {
+                            "enable": true,
+                            "autoreset": false,
+                            "subject": "",
+                            "message": "",
+                            "level": 1
+                        }
+                    }
+                ],
+                "plan_id": 3,
+                "package": "",
+                "method": 1,
+                "coupon_code": "",
+                "chatgpt": {
+                    "enable": true,
+                    "regex": "",
+                    "operate": "IN"
+                }
+            }
+        }
+    ],
     "crawl": {
         "enable": true,
+        "exclude": "",
+        "threshold": 5,
         "singlelink": true,
+        "persist": {
+            "subs": "crawledsubs",
+            "proxies": "crawledproxies"
+        },
+        "config": {
+            "rename": "",
+            "include": "",
+            "exclude": "",
+            "xxxxxxx": ""
+        },
+        "telegram": {
+            "enable": true,
+            "pages": 5,
+            "exclude": "",
+            "users": {
+                "channel": {
+                    "include": "",
+                    "exclude": "",
+                    "config": {
+                        "rename": "",
+                        "xxxxxx": ""
+                    },
+                    "push_to": []
+                }
+            }
+        },
+        "google": {
+            "enable": false,
+            "exclude": "",
+            "limits": 100,
+            "notinurl": [],
+            "push_to": []
+        },
+        "yandex": {
+            "enable": false,
+            "exclude": "",
+            "within": 3,
+            "pages": 5,
+            "notinurl": [],
+            "push_to": []
+        },
+        "github": {
+            "enable": true,
+            "pages": 2,
+            "push_to": [],
+            "exclude": "",
+            "spams": []
+        },
+        "twitter": {
+            "enable": true,
+            "users": {
+                "username": {
+                    "enable": true,
+                    "num": 30,
+                    "include": "",
+                    "exclude": "",
+                    "config": {
+                        "rename": "",
+                        "xxxxxx": ""
+                    },
+                    "push_to": []
+                }
+            }
+        },
+        "repositories": [
+            {
+                "enable": false,
+                "username": "",
+                "repo_name": "",
+                "commits": 3,
+                "exclude": "",
+                "push_to": []
+            }
+        ],
         "pages": [
             {
                 "enable": true,
-                "url": "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/sub/sub_merge.txt",
+                "url": "",
                 "include": "",
-                "push_to": [
-                    "au_group"
-                ]
-            },
+                "exclude": "",
+                "multiple": true,
+                "placeholder": "",
+                "start": 1,
+                "end": 10,
+                "config": {
+                    "rename": ""
+                },
+                "push_to": []
+            }
+        ],
+        "scripts": [
             {
-                "enable": true,
-                "url": "https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub",
-                "include": "",
-                "push_to": [
-                    "au_group"
-                ]
+                "enable": false,
+                "script": "file#function",
+                "params": {
+                    "persist": {
+                        "fileid": ""
+                    },
+                    "any": "xxx",
+                    "config": {
+                        "enable": true,
+                        "liveness": true,
+                        "exclude": "",
+                        "rename": "",
+                        "push_to": []
+                    }
+                }
             }
         ]
     },
     "groups": {
-        "au_group": {
+        "xxx": {
             "emoji": true,
             "list": true,
             "targets": {
-                "clash": "au-clash",
-                "singbox": "au-singbox",
-                "v2ray": "au-v2ray"
+                "clash": "xxx-clash",
+                "singbox": "xxx-singbox",
+                "v2ray": "xxx-v2ray"
             },
             "regularize": {
-                "enable": true,
+                "enable": false,
                 "locate": true,
-                "residential": false
+                "residential": true,
+                "bits": 2
             }
         }
     },
     "storage": {
-        "engine": "gist",
+        "engine": "xxx",
+        "base": "https://api.xxx.com",
+        "domain": "https://xxx.com",
         "items": {
-            "au-clash": {
-                "gistid": "4d55ce6d887f17cee17158e0051dab63",
-                "filename": "au-clash.yaml"
+            "xxx-clash": {
+                "username": "",
+                "folderid": "",
+                "fileid": ""
             },
-            "au-singbox": {
-                "gistid": "4d55ce6d887f17cee17158e0051dab63",
-                "filename": "au-singbox.json"
+            "xxx-singbox": {
+                "fileid": ""
             },
-            "au-v2ray": {
-                "gistid": "4d55ce6d887f17cee17158e0051dab63",
-                "filename": "au-v2ray.txt"
+            "xxx-v2ray": {
+                "username": "",
+                "fileid": ""
+            },
+            "crawledsubs": {
+                "username": "",
+                "folderid": "",
+                "fileid": ""
+            },
+            "crawledproxies": {
+                "username": "",
+                "folderid": "",
+                "fileid": ""
             }
         }
     }
